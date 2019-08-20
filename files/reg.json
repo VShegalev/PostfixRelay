@@ -1,0 +1,7 @@
+{
+  "ID": "postfix-relay",
+  "Name": "postfix-relay",
+  "Tags": [
+    "postfix-relay"
+  ]
+}

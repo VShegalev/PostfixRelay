@@ -1,0 +1,17 @@
+version: "3.3"
+services:
+
+  postfix:
+    build: .
+    image: $USER/my-postfix:latest
+    env_file: ./.env
+    volumes:
+      - maillog:/var/log
+      - postfix:/etc/postfix
+    ports:
+      - 465:465
+
+volumes:
+  maillog:
+  postfix:
+  
